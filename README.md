@@ -6,6 +6,9 @@
 ### What is a container?
 **Def.** Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, thanks to the container, the developer can rest assured that the application will run on any other Linux machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code.
 
+### Connecting Docker
+<PLACE HOLDER>
+
 ## SQL
 ### What is SQL?
 **Def.** Structured query language
@@ -35,3 +38,38 @@ The DML part is also known as CRUD.
 - Read
 - Update
 - Delete
+
+##Database
+### What is a Database
+**Def.** <PLACE HOLDER>
+
+### Types of Database
+- Flat file Database
+  - Stores everything in one table.
+  - Good for small numbers of records related to a single topic.
+- Relational Database
+  - Gives you the ability to separate masses data into numerous tables.
+  - They are linked to each other using keys (primary and foreign keys).
+    - One to one
+    - One to many
+    - Many to many
+- Big Data
+  - MongoDB, Vertica etc.
+  - Used for Data Analytics and Business Intelligence
+  - Digital Age and Internet of Things
+
+### Example Database tools
+- Access (Microsoft)
+  - Local database. Not too be used on external servers or build system on it.
+- PostgreSQL
+  - Popular because it is open source
+- SQLite
+  - Small database. Things goes into one file.
+- MySQL
+  - PHP based.
+- Redis
+  - Not only SQL based. Fast access to data.
+- MongoDB
+  - Not only SQL. It is an open source.
+- ORACLE
+  - Hold data for you. Can apply further ORACLE data services to the data held.
