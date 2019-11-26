@@ -73,3 +73,7 @@ The DML part is also known as CRUD.
   - Not only SQL. It is an open source.
 - ORACLE
   - Hold data for you. Can apply further ORACLE data services to the data held.
+
+## SQL Cheat sheet
+| input | Comment |
+| SELECT <column name>  | n.a.  |
