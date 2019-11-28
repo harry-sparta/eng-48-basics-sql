@@ -75,5 +75,14 @@ The DML part is also known as CRUD.
   - Hold data for you. Can apply further ORACLE data services to the data held.
 
 ## SQL Cheat sheet
-| input | Comment |
-| SELECT <column name>  | n.a.  |
+- SELECT <column name>
+- * <all columns>
+- FROM <table>
+- AS
+- WHERE
+  - <column name condition 1> AND <column name condition 2>..... etc
+  - <column name condition 1> OR <column name condition 2>..... etc
+  - <column name> IN (<value 1>, <value 2>…)
+  - WHERE <column name> NOT IN (<value 1>, <value 2>…)
+  - WHERE <column name> BETWEEN (< lesser value >, <greater value>…)
+  - LIKE <%pattern%>
