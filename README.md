@@ -39,7 +39,7 @@ The DML part is also known as CRUD.
 - Update
 - Delete
 
-##Database
+## Database
 ### What is a Database
 **Def.** <PLACE HOLDER>
 
@@ -75,16 +75,16 @@ The DML part is also known as CRUD.
   - Hold data for you. Can apply further ORACLE data services to the data held.
 
 ## SQL Cheat sheet
-- **SELECT** <column>
-- * <all columns>
+- **SELECT** <col.>
+- **(*)** <all col.>
 - **FROM** <table>
 - **AS**
 - **WHERE**
-  - <column name condition 1> **AND** <column condition 2>..... etc
-  - <column condition 1> **OR** <column condition 2>..... etc
-  - <column name> **IN** (<value 1>, <value 2>…)
-  - **WHERE** <column> **NOT IN** (<value 1>, <value 2>…)
-  - **WHERE** <column> **BETWEEN** (< lesser value >, <greater value>…)
+  - <col. name condition 1> **AND** <col. condition 2>..... etc
+  - <col. condition 1> **OR** <col. condition 2>..... etc
+  - <col. name> **IN** (<value 1>, <value 2>…)
+  - **WHERE** <col.> **NOT IN** (<value 1>, <value 2>…)
+  - **WHERE** <col.> **BETWEEN** (< lesser value >, <greater value>…)
   - **LIKE** <%pattern%>
 - Wild cards
   - **%** zero or more charcters <%pattern%>
@@ -99,39 +99,39 @@ The DML part is also known as CRUD.
     - *'a-b'
 - **IS NULL**
 - **IS NOT NULL**
-- **ORDER BY** <column> **ASC**/**DESC**
-- **TOP** <# of rows> <column>
+- **ORDER BY** <col.> **ASC**/**DESC**
+- **TOP** <# of rows> <col.>
 - <table> **OFFSET** <skipped rows> **ROWS FETCH NEXT** <# of rows> **ROWS ONLY**
-- **DISTINCT** <column>
+- **DISTINCT** <col.>
 - Aggregate functions:
-  - **GROUP BY** <column with common value>
+  - **GROUP BY** <col. with common value>
     - **HAVING** <alias> <operator> <value>
-  - **SUM(**<numeric column>**)**
-  - **AVG(**<numeric column>**)**
-  - **MAX(**<numeric column>**)**
-  - **MIN(**<numeric column>**)**
-- **COUNT(**<column>**)**
+  - **SUM(**<numeric col.>**)**
+  - **AVG(**<numeric col.>**)**
+  - **MAX(**<numeric col.>**)**
+  - **MIN(**<numeric col.>**)**
+- **COUNT(**<col.>**)**
 - **ROUND(**<number>, <decimals>**)**
-- **CREATE TABLE** <table> <column 1 datatype key, column 2 datatype key, .....>  
+- **CREATE TABLE** <table> <col. 1 datatype key, col. 2 datatype key, .....>  
   - if creating a primary key *CREATE TABLE enrollment (id INT IDENTITY PRIMARY KEY)*
   - if creating a foreign key *CREATE TABLE enrollment (id INT IDENTITY PRIMARY KEY, course_id INT FOREIGN KEY REFERENCES course(id), spartan_id INT FOREIGN KEY REFERENCES employee(id))*
 - **IDENTITY** <start> <increment>
   - This is an auto-increment feature used to auto generate unique records e.g. when creating primary key it generates an id for user automatically, id insert not required during *INSERT TABLE, VALUES()* step.
 - **ALTER TABLE** <table>
-  - **ADD** <column> <data type> <key>
-  - **ALTER COLUMN** <column> <data type> <key>
+  - **ADD** <col.> <data type> <key>
+  - **ALTER col.** <col.> <data type> <key>
   - **INSERT INTO** <table>
-    - **VALUES** <column 1, column 2, etc.>
+    - **VALUES** <col. 1, col. 2, etc.>
       - if selecting foreign key *VALUES ('Room 1', (SELECT academy.id FROM academy))*
 - **UPDATE** <table>
-  - **SET** <column 1> <condition>, <column 2> <condition>,....etc
+  - **SET** <col. 1> <condition>, <col. 2> <condition>,....etc
   - **WHERE** <condition> for rows
     - if no *WHERE* condition set, all rows will be updated
 - String functions
-  - **UPPER(**<value or column>**)**
-  - **LOWER(**<value or column>**)**
-  - **SUBSTR(**<value or column>, <start>**,** <length>**)**
-  - **REPLACE(**<original value or column>**,** <target string>**,** <replacement string>**)**
+  - **UPPER(**<value or col.>**)**
+  - **LOWER(**<value or col.>**)**
+  - **SUBSTR(**<value or col.>, <start>**,** <length>**)**
+  - **REPLACE(**<original value or col.>**,** <target string>**,** <replacement string>**)**
   - **CONCAT(**<string 1>, <string 2>, ....etc **)**
   - **CHARINDEX(**<substring>, <string>, <start>)
     - returns the position of <substring> in <string> and 0 if no result
@@ -152,7 +152,7 @@ The DML part is also known as CRUD.
       - minute, mi, n = Minute
       - second, ss, s = Second
       - millisecond, ms = Millisecond
-  - **DATEADD(**<interval>, <numeber>, <date>**)**
+  - **DATEADD(**<interval>, <number>, <date>**)**
     - returns the new date with the interval added
   - **DATEFORMAT(**)
 - Joins (brackets for full join name)
