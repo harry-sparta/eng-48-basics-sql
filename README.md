@@ -131,7 +131,7 @@ The DML part is also known as CRUD.
   - **UPPER(**<value. or col.>**)**
   - **LOWER(**<value. or col.>**)**
   - **SUBSTR(**<value. or col.>, <start.>**,** <length.>**)**
-  - **REPLACE(**<original value. or col.>**,** <target string.>**,** <replacement string.>**)**
+  - **REPLACE(**<original.value. or col.>**,** <target.string.>**,** <replacement.string.>**)**
   - **CONCAT(**<string 1>, <string 2>, ....etc **)**
   - **CHARINDEX(**<substring.>, <string.>, <start.>)
     - returns the position of <substring> in <string> and 0 if no result
