@@ -77,14 +77,14 @@ The DML part is also known as CRUD.
 ## SQL Cheat sheet
 - **SELECT** <col.>
 - **(*)** <all col.>
-- **FROM** <table>
+- **FROM** <table.>
 - **AS**
 - **WHERE**
   - <col. name condition 1> **AND** <col. condition 2>..... etc
   - <col. condition 1> **OR** <col. condition 2>..... etc
   - <col. name> **IN** (<value 1>, <value 2>…)
   - **WHERE** <col.> **NOT IN** (<value 1>, <value 2>…)
-  - **WHERE** <col.> **BETWEEN** (< lesser value >, <greater value>…)
+  - **WHERE** <col.> **BETWEEN** (<lesser value.>, <greater value.>…)
   - **LIKE** <%pattern%>
 - Wild cards
   - **%** zero or more charcters <%pattern%>
@@ -101,46 +101,46 @@ The DML part is also known as CRUD.
 - **IS NOT NULL**
 - **ORDER BY** <col.> **ASC**/**DESC**
 - **TOP** <# of rows> <col.>
-- <table> **OFFSET** <skipped rows> **ROWS FETCH NEXT** <# of rows> **ROWS ONLY**
+- <table.> **OFFSET** <skipped rows.> **ROWS FETCH NEXT** <# of rows> **ROWS ONLY**
 - **DISTINCT** <col.>
 - Aggregate functions:
-  - **GROUP BY** <col. with common value>
-    - **HAVING** <alias> <operator> <value>
+  - **GROUP BY** <col. with common value.>
+    - **HAVING** <alias.> <operator.> <value.>
   - **SUM(**<numeric col.>**)**
   - **AVG(**<numeric col.>**)**
   - **MAX(**<numeric col.>**)**
   - **MIN(**<numeric col.>**)**
 - **COUNT(**<col.>**)**
-- **ROUND(**<number>, <decimals>**)**
-- **CREATE TABLE** <table> <col. 1 datatype key, col. 2 datatype key, .....>  
+- **ROUND(**<number.>, <decimals.>**)**
+- **CREATE TABLE** <table.> <col. 1 datatype. key., col. 2 datatype. key., .....>  
   - if creating a primary key *CREATE TABLE enrollment (id INT IDENTITY PRIMARY KEY)*
   - if creating a foreign key *CREATE TABLE enrollment (id INT IDENTITY PRIMARY KEY, course_id INT FOREIGN KEY REFERENCES course(id), spartan_id INT FOREIGN KEY REFERENCES employee(id))*
-- **IDENTITY** <start> <increment>
+- **IDENTITY** <start.> <increment.>
   - This is an auto-increment feature used to auto generate unique records e.g. when creating primary key it generates an id for user automatically, id insert not required during *INSERT TABLE, VALUES()* step.
-- **ALTER TABLE** <table>
-  - **ADD** <col.> <data type> <key>
-  - **ALTER col.** <col.> <data type> <key>
-  - **INSERT INTO** <table>
+- **ALTER TABLE** <table.>
+  - **ADD** <col.> <data type.> <key.>
+  - **ALTER col.** <col.> <data type.> <key.>
+  - **INSERT INTO** <table.>
     - **VALUES** <col. 1, col. 2, etc.>
       - if selecting foreign key *VALUES ('Room 1', (SELECT academy.id FROM academy))*
-- **UPDATE** <table>
-  - **SET** <col. 1> <condition>, <col. 2> <condition>,....etc
+- **UPDATE** <table.>
+  - **SET** <col. 1> <condition.>, <col. 2> <condition.>,....etc
   - **WHERE** <condition> for rows
     - if no *WHERE* condition set, all rows will be updated
 - String functions
   - **UPPER(**<value or col.>**)**
   - **LOWER(**<value or col.>**)**
-  - **SUBSTR(**<value or col.>, <start>**,** <length>**)**
-  - **REPLACE(**<original value or col.>**,** <target string>**,** <replacement string>**)**
+  - **SUBSTR(**<value or col.>, <start.>**,** <length.>**)**
+  - **REPLACE(**<original value or col.>**,** <target string.>**,** <replacement string.>**)**
   - **CONCAT(**<string 1>, <string 2>, ....etc **)**
-  - **CHARINDEX(**<substring>, <string>, <start>)
+  - **CHARINDEX(**<substring.>, <string.>, <start.>)
     - returns the position of <substring> in <string> and 0 if no result
-  - **FORMAT(**<value>, <format>)
+  - **FORMAT(**<value.>, <format.>)
     - e.g. turning 1000000 to 1,000,000.00 *FORMAT(UnitPrice,'#,##0.##')*
 - Date functions
   - **GETDATE()** returns current date and time of Database
-  - **DATEDIFF(**<interval>, <date 1>, <date 2>**)**
-    - differences between 2 dates, <intervals> can be:
+  - **DATEDIFF(**<interval.>, <date 1>, <date 2>**)**
+    - differences between 2 dates, <interval.s> can be:
       - year, yyyy, yy = Year
       - quarter, qq, q = Quarter
       - month, mm, m = month
@@ -152,8 +152,8 @@ The DML part is also known as CRUD.
       - minute, mi, n = Minute
       - second, ss, s = Second
       - millisecond, ms = Millisecond
-  - **DATEADD(**<interval>, <number>, <date>**)**
-    - returns the new date with the interval added
+  - **DATEADD(**<interval.>, <number.>, <date.>**)**
+    - returns the new date with the interval. added
   - **DATEFORMAT(**)
 - Joins (brackets for full join name)
     - **(INNER) JOIN**
